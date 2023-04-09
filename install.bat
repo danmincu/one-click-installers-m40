@@ -98,7 +98,7 @@ if not exist repositories\ (
 )
 cd repositories || goto end
 if not exist GPTQ-for-LLaMa\ (
-  git clone https://github.com/oobabooga/GPTQ-for-LLaMa.git -b cuda
+  git clone https://github.com/danmincu/GPTQ-for-LLaMa-M40 -b cuda-M40
   cd GPTQ-for-LLaMa || goto end
   call python -m pip install -r requirements.txt
   call python setup_cuda.py install
